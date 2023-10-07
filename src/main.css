@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    height: 100vh;
+
+}
+
+/* cabeçalho */
+
+header {
+    border-bottom: 1px solid grey;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+
+.container form input,
+button {
+    padding: 2px;
+    font-weight: bold;
+    border: 1px solid gray;
+
+}
+
+.container form button {
+    cursor: pointer;
+}
+
+/* menu de navegação */
+
+.subMenu {
+    display: none;
+    position: absolute;
+    margin-top: 1em;
+    width: 300px;
+
+
+}
+
+.subMenu li {
+    padding: 6px;
+    list-style: none;
+    background-color: white;
+
+}
+
+.subMenu li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.subMenu li a:hover {
+    color: blue;
+}
+
+.container_menu {
+    max-width: 1024px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+
+
+.container_menu>li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+    border-top: 1px solid transparent;
+
+}
+
+
+.clear {
+    clear: both;
+}
+
+.container_menu li:hover .subMenu {
+    display: block;
+
+
+}
+
+.container_menu li:hover {
+    border-color: grey;
+}
+
+/* seção de artigos */
+
+p {
+    color: blue;
+    line-height: 25px;
+}
+
+.container_article {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 auto;
+}
+
+.container_article h1 {
+    padding: 15px 0;
+}
+
+.destaque {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.destaque p {
+    font-size: 2em;
+    margin-left: 8px;
+    line-height: normal;
+}
+
+.noticia img {
+    max-width: 100%;
+}
+
+.container_novidades {
+    margin-bottom: 2em;
+}
+
+
+
+/* seção utimas noticias */
+.not {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 32.3%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+aside article p {
+    margin-bottom: 15px;
+}
+
+/* design responsivo */
+
+@media screen and (max-width:767px) {
+
+    /* artigos */
+    .container_article {
+        display: block;
+        max-width: 90%;
+
+    }
+
+
+    #aside {
+        padding-bottom: 2em;
+    }
+
+    .destaque {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+
+    .destaque p {
+        font-size: 1.5em;
+        line-height: normal;
+    }
+
+    .not {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+
+    .not p {
+        max-width: 100%;
+
+    }
+
+    aside h1 {
+        margin-top: 2em;
+    }
+
+    /* cabeçalho */
+    .container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container_menu>li {
+
+        clear: both;
+    }
+
+    .subMenu {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .btn button {
+        margin-top: 1em;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+
+}
+
+
+
+@media screen and (min-width:880px) {
+    .btn button {
+        display: none;
+    }
+}
+
+
+
+/* responsividade para tablet  */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container_article {
+
+        max-width: 90%;
+    }
+
+
+    .destaque p {
+        font-size: 1em;
+        line-height: 2em;
+        font-weight: bold;
+
+    }
+
+
+    .not {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 3%;
+        row-gap: 5%;
+
+    }
+
+    aside {
+        margin: 1em 0 0 12px;
+    }
+
+
+    #aside {
+        padding-bottom: 2em;
+    }
+
+    .btn button {
+        background-color: black;
+        padding: 5px;
+        font-weight: bold;
+        color: white;
+    }
+
+}

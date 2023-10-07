@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- js -->
+    <script src="index.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ebac_news</h1>
+
+            <div>
+
+                <form id="form">
+                    <input type="search" placeholder="Buscar">
+                    <button type="submit">Pesquisar</button>
+                </form>
+
+            </div>
+
+            <div class="btn">
+                <button type="button">Abrir menu</button>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul class="container_menu menu">
+                <!-- esporte -->
+                <li>
+                    Esportes
+
+                    <ul class="subMenu">
+                        <li><a href="#">Futebol</a></li>
+                        <li><a href="#">Basquete</a></li>
+                        <li><a href="#">Formula 1</a></li>
+                    </ul>
+
+                </li>
+                <!-- economia -->
+                <li>
+                    Economia
+
+                    <ul class="subMenu">
+                        <li><a href="#">Bolsa de valores</a></li>
+                        <li><a href="#">Imposto de renda</a></li>
+                        <li><a href="#">Finanças pessoais</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+
+    <!-- destaque -->
+    <main class=" container_menu container_article">
+
+        <div>
+            <h1>destaque</h1>
+            <article class="noticia destaque">
+                <img src="https://via.placeholder.com/320x320" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+            </article>
+
+
+            <section>
+                <h1>Útimas noticias</h1>
+                <div class="not">
+
+                    <article class="noticia">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                    </article>
+
+                    <article class="noticia">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                    </article>
+
+                    <article class="noticia">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                    </article>
+
+                    <article class="noticia" id="aside">
+                        <img src="https://via.placeholder.com/320x320" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                    </article>
+                </div>
+            </section>
+
+
+
+        </div>
+
+
+
+        <!-- novidades -->
+        <aside class="container_novidades">
+            <div>
+                <h1>Novidades</h1>
+                <article class="noticia">
+                    <img src="https://via.placeholder.com/320x320" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                </article>
+
+                <article class="noticia">
+                    <img src="https://via.placeholder.com/320x320" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                </article>
+
+                <article class="noticia" id="aside">
+                    <img src="https://via.placeholder.com/320x320" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam modi rerum, repellendus non veritatis nobis voluptatum iure id </p>
+                </article>
+
+            </div>
+        </aside>
+    </main>
+
+
+
+    <!-- ARQUIVOS EXTERNO JQUERY -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn button").click(function () {
+                $(".menu").slideToggle()
+            })
+        })
+    </script>
+</body>
+
+</html>
